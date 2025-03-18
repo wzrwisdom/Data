@@ -1,0 +1,41 @@
+import pandas as pd
+
+
+basedir = r'C:\Users\wangzirui_cx\Nutstore\1\工作记录\交易持仓'
+filepath = rf"{basedir}\dma_future_trade_7428_20250317.csv"
+df = pd.read_csv(filepath)
+# print(df)
+
+# 收盘价
+close_dict = {'510300.SH': 4.094, '512500.SH': 3.344, '512100.SH': 2.634}
+
+# 计算净持仓
+df['buy_volume/(份)'] = df['volume'] * (df['side'] == 1)
+df['sell_volume/(份)'] = df['volume'] * (df['side'] == 2)
+net_position = df.groupby('code').agg({'buy_volume/(份)': 'sum', 'sell_volume/(份)': 'sum'})
+net_position['net_position/(份)'] = net_position['buy_volume/(份)'] - net_position['sell_volume/(份)']
+# net_position = net_position[['net_position']]  # 只保留净持仓列
+
+
+# 计算损益
+def calculate_pnl(row):
+    close_price = close_dict.get(row['code'], 0)
+    if row['side'] == 1:  # 买入
+        return (close_price - row['price']) * row['volume']
+    else:  # 卖出
+        return (row['price'] - close_price) * row['volume']
+
+df['pnl/(元)'] = df.apply(calculate_pnl, axis=1)
+pnl_summary = df.groupby('code')['pnl/(元)'].sum().to_frame()
+
+def calculate_cost(row):
+    rate = 0.00005
+    return row['price'] * row['volume'] * rate
+df['cost/(元)'] = df.apply(calculate_cost, axis=1)
+cost_summary = df.groupby('code')['cost/(元)'].sum().to_frame()
+
+# 结果
+result = net_position.join([pnl_summary, cost_summary])
+result['pnl(deduction rate)/(元)'] = result['pnl/(元)'] - result['cost/(元)']
+result.to_csv(rf"{basedir}/dma_future_pnl_netpos_7428_20250317.csv")
+print(result)
