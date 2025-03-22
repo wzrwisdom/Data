@@ -10,6 +10,7 @@ basedir = "/home/wangzirui/workspace/FlowDataTradeSystem"
 sys.path.insert(0, basedir)
 from kungfu.wingchun.constants import *
 import dolphindb as ddb
+import yaml
 
 from FlowDataTradeSystem.feature.feature_builder import FeatureBuilder
 from FlowDataTradeSystem.feature.future_feature_builder import FutureFeatureBuilder
@@ -28,37 +29,36 @@ from FlowDataTradeSystem.tests.utils.storage import (
 from FlowDataTradeSystem.tests.utils.config import *
 # from FlowDataTradeSystem.tests.utils.rqutil import *
 # from FlowDataTradeSystem.factor.factor_builder import myprint
-# 期货
-# SOURCE = "ctp"
-# ACCOUNT = "089270"
-# tickers = ["rb2001","rb2003"]
-# VOLUME = 2
-# EXCHANGE = Exchange.SHFE
+
+with open(f"{basedir}/FlowDataTradeSystem/tests/config/strategyv3_config.yml", "r", encoding='utf-8') as f:
+    config = yaml.safe_load(f)
 
 # 股票柜台
-SOURCE = "otc"
+SOURCE = config['SOURCE']
 # 行情源
-SOURCE_md = "AmdGf"
-SOURCE_future_md = 'ctp'
-# SOURCE_md = "AmdGf"
+SOURCE_md = config['SOURCE_md']
+SOURCE_future_md = config['SOURCE_future_md']
 # 要链接的账户
-ACCOUNT = "single-OTC000082645-tcp223701242299709"
+ACCOUNT = config['ACCOUNT']
 # 准备订阅的标的
-tickers_SH = ["510310", "510300"]
+tickers_SH = config['tickers_SH']
 # tickers_SZ = ["159673", "159919"]
-tickers_SZ = []
+tickers_SZ = config['tickers_SZ']
 tickers = tickers_SH + tickers_SZ
 # tickers_Future = [get_dominant_future("IF", datetime.now().date())]
-tickers_Future = ['IF2503']
+tickers_Future = config['tickers_Future']
 tickers_pair = {ticker: tickers_Future[0] for ticker in tickers_SH + tickers_SZ}
 # tickers = ['510310']
 # 下单数量
 VOLUME = 10000
 # 标的对应的交易所
-EXCHANGE = Exchange.SSE
-EXCHANGE_SH = Exchange.SSE
-EXCHANGE_SZ = Exchange.SSE
-EXCHANGE_FUTURE = Exchange.CFFEX
+EXCHANGE = config['EXCHANGE']
+EXCHANGE_SH = config['EXCHANGE_SH']
+EXCHANGE_SZ = config['EXCHANGE_SZ']
+EXCHANGE_FUTURE = config['EXCHANGE_FUTURE']
+
+# 启动后多久不交易
+WAITING_MIN = config['WAITING_MIN']
 
 # 动态加载所有因子模块
 factors_dir = f"{basedir}/FlowDataTradeSystem/factor/factors"
@@ -237,7 +237,7 @@ def construct_factor_and_sendOrder(context, entrust):
         
         
         # 程序启动不到1分钟则不进行下单
-        if context.now() - context.start_time <= 1000*60:
+        if context.now() - context.start_time <= 1000*60*WAITING_MIN:
             return
         # context.log.warning("{}".format(context.depth_orderbook))
         bid1 = context.depth_orderbook[ticker]['bid1'] 
