@@ -1,10 +1,12 @@
 // 创建分布式数据库，按年份分区
-db = database("dfs://holidayDB", VALUE, 2023..2025)
+years = 2023..2025
+yearRange = datetimeParse(string(years)+".01.01", "yyyy.MM.dd")
+db = database("dfs://holidayDB", RANGE, yearRange)
 // 定义表结构
 schema = table(
     1:0, 
     `holiday_date`holiday_name`holiday_type, 
-    [DATE, SYMBOL, BOOL]
+    [TIMESTAMP, SYMBOL, BOOL]
 )
 // 创建分区表，按holiday_date分区
 holidayTable = db.createPartitionedTable(
@@ -12,3 +14,4 @@ holidayTable = db.createPartitionedTable(
     "holidayData", 
     `holiday_date
 )
+
