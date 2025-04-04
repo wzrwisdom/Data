@@ -1,8 +1,14 @@
-// 创建节假日表
-holidaySchema = table(
+// 创建分布式数据库，按年份分区
+db = database("dfs://holidayDB", VALUE, 2023..2025)
+// 定义表结构
+schema = table(
     1:0, 
     `holiday_date`holiday_name`holiday_type, 
-    [DATE, SYMBOL, CHAR]
+    [DATE, SYMBOL, BOOL]
 )
-
-holidays = table(holidaySchema)
+// 创建分区表，按holiday_date分区
+holidayTable = db.createPartitionedTable(
+    schema, 
+    "holidayData", 
+    `holiday_date
+)

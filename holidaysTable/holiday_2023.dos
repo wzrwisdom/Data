@@ -1,5 +1,7 @@
 // 2023年节假日数据
-holidays.append!(table(
+table = loadTable("dfs://holidayDB", "holidayData")
+
+holidaysData = table(
     [2023.01.01, 2023.01.21, 2023.01.22, 2023.01.23, 2023.01.24, 2023.01.25, 2023.01.26, 2023.01.27,
      2023.04.05, 
      2023.05.01, 2023.05.02, 2023.05.03, 2023.05.04, 2023.05.05,
@@ -10,5 +12,6 @@ holidays.append!(table(
      `劳动节, `劳动节, `劳动节, `劳动节, `劳动节,
      `端午节, `端午节, `端午节,
      `中秋节, `国庆节, `国庆节, `国庆节, `国庆节, `国庆节, `国庆节, `国庆节] as holiday_name,
-    take('0', 25) as holiday_type
-))
+    take(1, 25) as holiday_type
+)
+table.append!(holidaysData)
