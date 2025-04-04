@@ -16,6 +16,6 @@ holidaysData = table(
      `端午节,
      `中秋节, `中秋节, `中秋节,
      `国庆节, `国庆节, `国庆节, `国庆节, `国庆节, `国庆节, `国庆节] as holiday_name,
-    take(1, 28) as holiday_type
+    take(true, 28) as holiday_type
 )
 table.append!(holidaysData)
