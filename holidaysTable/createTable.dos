@@ -1,6 +1,8 @@
-CREATE TABLE HOLIDAY (
-    holiday_date INT NOT NULL,        -- 日期格式: yyyyMMdd (如20230101)
-    holiday_name VARCHAR(100),       -- 节假日名称
-    holiday_type CHAR(1) NOT NULL,   -- '1'=交易日, '0'=非交易日（节假日或调休日）
-    PRIMARY KEY (holiday_date)
-);
+// 创建节假日表
+holidaySchema = table(
+    1:0, 
+    `holiday_date`holiday_name`holiday_type, 
+    [DATE, SYMBOL, CHAR]
+)
+
+holidays = table(holidaySchema)
