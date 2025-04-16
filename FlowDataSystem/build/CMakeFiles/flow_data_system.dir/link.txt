@@ -1,0 +1,3 @@
+C:\mingw64\bin\cmake.exe -E rm -f CMakeFiles\flow_data_system.dir/objects.a
+C:\mingw64\bin\llvm-ar.exe qc CMakeFiles\flow_data_system.dir/objects.a @CMakeFiles\flow_data_system.dir\objects1.rsp
+C:\mingw64\bin\clang++.exe -g -shared -o lib\flow_data_system.cp312-win_amd64.pyd -Wl,--major-image-version,0,--minor-image-version,0 -Wl,--whole-archive CMakeFiles\flow_data_system.dir/objects.a -Wl,--no-whole-archive @CMakeFiles\flow_data_system.dir\linkLibs.rsp

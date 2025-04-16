@@ -1,0 +1,3 @@
+C:\mingw64\bin\cmake.exe -E rm -f CMakeFiles\FlowDataSystem.dir/objects.a
+C:\mingw64\bin\ar.exe qc CMakeFiles\FlowDataSystem.dir/objects.a @CMakeFiles\FlowDataSystem.dir\objects1.rsp
+C:\mingw64\bin\g++.exe -g -shared -o ..\bin\libFlowDataSystem.dll -Wl,--out-implib,..\lib\libFlowDataSystem.dll.a -Wl,--major-image-version,0,--minor-image-version,0 -Wl,--whole-archive CMakeFiles\FlowDataSystem.dir/objects.a -Wl,--no-whole-archive @CMakeFiles\FlowDataSystem.dir\linkLibs.rsp

@@ -1,0 +1,5 @@
+C:/Users/12552/PycharmProjects/Data/.vscode/PybindTest/build/CMakeFiles/mymodule.dir
+C:/Users/12552/PycharmProjects/Data/.vscode/PybindTest/build/CMakeFiles/edit_cache.dir
+C:/Users/12552/PycharmProjects/Data/.vscode/PybindTest/build/CMakeFiles/rebuild_cache.dir
+C:/Users/12552/PycharmProjects/Data/.vscode/PybindTest/build/pybind11/CMakeFiles/edit_cache.dir
+C:/Users/12552/PycharmProjects/Data/.vscode/PybindTest/build/pybind11/CMakeFiles/rebuild_cache.dir

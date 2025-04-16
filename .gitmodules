@@ -1,0 +1,3 @@
+[submodule "FlowDataSystem/extern/googletest"]
+	path = FlowDataSystem/extern/googletest
+	url = https://github.com/google/googletest.git

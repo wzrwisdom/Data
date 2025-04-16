@@ -1,0 +1,3 @@
+C:/Users/12552/PycharmProjects/Data/CMakeTest/build/CMakeFiles/MyYamlProject.dir
+C:/Users/12552/PycharmProjects/Data/CMakeTest/build/CMakeFiles/edit_cache.dir
+C:/Users/12552/PycharmProjects/Data/CMakeTest/build/CMakeFiles/rebuild_cache.dir

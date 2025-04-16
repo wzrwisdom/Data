@@ -1,0 +1,8 @@
+[
+{
+  "directory": "C:/Users/12552/PycharmProjects/Data/CMakeTest/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/MyYamlProject.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\MyYamlProject.dir\\main.cpp.obj -c C:\\Users\\12552\\PycharmProjects\\Data\\CMakeTest\\main.cpp",
+  "file": "C:/Users/12552/PycharmProjects/Data/CMakeTest/main.cpp",
+  "output": "CMakeFiles/MyYamlProject.dir/main.cpp.obj"
+}
+]

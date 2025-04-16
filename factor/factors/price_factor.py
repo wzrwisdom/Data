@@ -88,13 +88,17 @@ class WB10Factor(Factor):
 
 
 class SpreadFactor(Factor):
+    # 定义一个名为spread1的因子类
     name = "spread1"
 
     def compute(self, builder, **kwargs):
+        # 调用builder函数，获取s1和b1两个因子
         s1 = builder(name="s1", window=1)
         b1 = builder(name="b1", window=1)
+        # 如果s1的长度小于1，则返回None
         if len(s1) < 1:
             return None
+        # 计算s1和b1的差值，并返回结果
         res = s1[0] - b1[0]
         return res.item()
 

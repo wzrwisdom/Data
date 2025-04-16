@@ -1,0 +1,3 @@
+C:\mingw64\bin\cmake.exe -E rm -f CMakeFiles\MyTaLibProject.dir/objects.a
+C:\mingw64\bin\ar.exe qc CMakeFiles\MyTaLibProject.dir/objects.a @CMakeFiles\MyTaLibProject.dir\objects1.rsp
+C:\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\MyTaLibProject.dir/objects.a -Wl,--no-whole-archive -o MyTaLibProject.exe -Wl,--out-implib,libMyTaLibProject.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\MyTaLibProject.dir\linkLibs.rsp

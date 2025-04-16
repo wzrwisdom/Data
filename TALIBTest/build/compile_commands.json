@@ -1,0 +1,8 @@
+[
+{
+  "directory": "C:/Users/12552/PycharmProjects/Data/TALIBTest/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/MyTaLibProject.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\MyTaLibProject.dir\\main.cpp.obj -c C:\\Users\\12552\\PycharmProjects\\Data\\TALIBTest\\main.cpp",
+  "file": "C:/Users/12552/PycharmProjects/Data/TALIBTest/main.cpp",
+  "output": "CMakeFiles/MyTaLibProject.dir/main.cpp.obj"
+}
+]

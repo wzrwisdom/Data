@@ -1,0 +1,68 @@
+[
+{
+  "directory": "C:/Users/12552/PycharmProjects/Data/build/src",
+  "command": "C:\\mingw64\\bin\\g++.exe -DFlowDataSystem_EXPORTS -DYAML_CPP_STATIC_DEFINE @CMakeFiles/FlowDataSystem.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\FlowDataSystem.dir\\core\\MultiDimData.cpp.obj -c C:\\Users\\12552\\PycharmProjects\\Data\\FlowDataSystem\\src\\core\\MultiDimData.cpp",
+  "file": "C:/Users/12552/PycharmProjects/Data/FlowDataSystem/src/core/MultiDimData.cpp",
+  "output": "src/CMakeFiles/FlowDataSystem.dir/core/MultiDimData.cpp.obj"
+},
+{
+  "directory": "C:/Users/12552/PycharmProjects/Data/build/src",
+  "command": "C:\\mingw64\\bin\\g++.exe -DFlowDataSystem_EXPORTS -DYAML_CPP_STATIC_DEFINE @CMakeFiles/FlowDataSystem.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\FlowDataSystem.dir\\core\\Utils.cpp.obj -c C:\\Users\\12552\\PycharmProjects\\Data\\FlowDataSystem\\src\\core\\Utils.cpp",
+  "file": "C:/Users/12552/PycharmProjects/Data/FlowDataSystem/src/core/Utils.cpp",
+  "output": "src/CMakeFiles/FlowDataSystem.dir/core/Utils.cpp.obj"
+},
+{
+  "directory": "C:/Users/12552/PycharmProjects/Data/build/src",
+  "command": "C:\\mingw64\\bin\\g++.exe -DFlowDataSystem_EXPORTS -DYAML_CPP_STATIC_DEFINE @CMakeFiles/FlowDataSystem.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\FlowDataSystem.dir\\core\\function.cpp.obj -c C:\\Users\\12552\\PycharmProjects\\Data\\FlowDataSystem\\src\\core\\function.cpp",
+  "file": "C:/Users/12552/PycharmProjects/Data/FlowDataSystem/src/core/function.cpp",
+  "output": "src/CMakeFiles/FlowDataSystem.dir/core/function.cpp.obj"
+},
+{
+  "directory": "C:/Users/12552/PycharmProjects/Data/build/src",
+  "command": "C:\\mingw64\\bin\\g++.exe -DFlowDataSystem_EXPORTS -DYAML_CPP_STATIC_DEFINE @CMakeFiles/FlowDataSystem.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\FlowDataSystem.dir\\core\\talibfunction.cpp.obj -c C:\\Users\\12552\\PycharmProjects\\Data\\FlowDataSystem\\src\\core\\talibfunction.cpp",
+  "file": "C:/Users/12552/PycharmProjects/Data/FlowDataSystem/src/core/talibfunction.cpp",
+  "output": "src/CMakeFiles/FlowDataSystem.dir/core/talibfunction.cpp.obj"
+},
+{
+  "directory": "C:/Users/12552/PycharmProjects/Data/build/src",
+  "command": "C:\\mingw64\\bin\\g++.exe -DFlowDataSystem_EXPORTS -DYAML_CPP_STATIC_DEFINE @CMakeFiles/FlowDataSystem.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\FlowDataSystem.dir\\factor\\factorBuilder.cpp.obj -c C:\\Users\\12552\\PycharmProjects\\Data\\FlowDataSystem\\src\\factor\\factorBuilder.cpp",
+  "file": "C:/Users/12552/PycharmProjects/Data/FlowDataSystem/src/factor/factorBuilder.cpp",
+  "output": "src/CMakeFiles/FlowDataSystem.dir/factor/factorBuilder.cpp.obj"
+},
+{
+  "directory": "C:/Users/12552/PycharmProjects/Data/build/src",
+  "command": "C:\\mingw64\\bin\\g++.exe -DFlowDataSystem_EXPORTS -DYAML_CPP_STATIC_DEFINE @CMakeFiles/FlowDataSystem.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\FlowDataSystem.dir\\factor\\factorFactory.cpp.obj -c C:\\Users\\12552\\PycharmProjects\\Data\\FlowDataSystem\\src\\factor\\factorFactory.cpp",
+  "file": "C:/Users/12552/PycharmProjects/Data/FlowDataSystem/src/factor/factorFactory.cpp",
+  "output": "src/CMakeFiles/FlowDataSystem.dir/factor/factorFactory.cpp.obj"
+},
+{
+  "directory": "C:/Users/12552/PycharmProjects/Data/build/src",
+  "command": "C:\\mingw64\\bin\\g++.exe -DFlowDataSystem_EXPORTS -DYAML_CPP_STATIC_DEFINE @CMakeFiles/FlowDataSystem.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\FlowDataSystem.dir\\feature\\featureBuilder.cpp.obj -c C:\\Users\\12552\\PycharmProjects\\Data\\FlowDataSystem\\src\\feature\\featureBuilder.cpp",
+  "file": "C:/Users/12552/PycharmProjects/Data/FlowDataSystem/src/feature/featureBuilder.cpp",
+  "output": "src/CMakeFiles/FlowDataSystem.dir/feature/featureBuilder.cpp.obj"
+},
+{
+  "directory": "C:/Users/12552/PycharmProjects/Data/build/src",
+  "command": "C:\\mingw64\\bin\\g++.exe -DFlowDataSystem_EXPORTS -DYAML_CPP_STATIC_DEFINE @CMakeFiles/FlowDataSystem.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\FlowDataSystem.dir\\feature\\featureBuilderBase.cpp.obj -c C:\\Users\\12552\\PycharmProjects\\Data\\FlowDataSystem\\src\\feature\\featureBuilderBase.cpp",
+  "file": "C:/Users/12552/PycharmProjects/Data/FlowDataSystem/src/feature/featureBuilderBase.cpp",
+  "output": "src/CMakeFiles/FlowDataSystem.dir/feature/featureBuilderBase.cpp.obj"
+},
+{
+  "directory": "C:/Users/12552/PycharmProjects/Data/build/src",
+  "command": "C:\\mingw64\\bin\\g++.exe -DFlowDataSystem_EXPORTS -DYAML_CPP_STATIC_DEFINE @CMakeFiles/FlowDataSystem.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\FlowDataSystem.dir\\feature\\futureFeatureBuilder.cpp.obj -c C:\\Users\\12552\\PycharmProjects\\Data\\FlowDataSystem\\src\\feature\\futureFeatureBuilder.cpp",
+  "file": "C:/Users/12552/PycharmProjects/Data/FlowDataSystem/src/feature/futureFeatureBuilder.cpp",
+  "output": "src/CMakeFiles/FlowDataSystem.dir/feature/futureFeatureBuilder.cpp.obj"
+},
+{
+  "directory": "C:/Users/12552/PycharmProjects/Data/build/tests",
+  "command": "C:\\mingw64\\bin\\g++.exe -DYAML_CPP_STATIC_DEFINE @CMakeFiles/FlowDataSystemTests.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\FlowDataSystemTests.dir\\test_main.cpp.obj -c C:\\Users\\12552\\PycharmProjects\\Data\\FlowDataSystem\\tests\\test_main.cpp",
+  "file": "C:/Users/12552/PycharmProjects/Data/FlowDataSystem/tests/test_main.cpp",
+  "output": "tests/CMakeFiles/FlowDataSystemTests.dir/test_main.cpp.obj"
+},
+{
+  "directory": "C:/Users/12552/PycharmProjects/Data/build/tests",
+  "command": "C:\\mingw64\\bin\\g++.exe -DYAML_CPP_STATIC_DEFINE @CMakeFiles/FlowDataSystemTests.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\FlowDataSystemTests.dir\\test_MultiDimData.cpp.obj -c C:\\Users\\12552\\PycharmProjects\\Data\\FlowDataSystem\\tests\\test_MultiDimData.cpp",
+  "file": "C:/Users/12552/PycharmProjects/Data/FlowDataSystem/tests/test_MultiDimData.cpp",
+  "output": "tests/CMakeFiles/FlowDataSystemTests.dir/test_MultiDimData.cpp.obj"
+}
+]

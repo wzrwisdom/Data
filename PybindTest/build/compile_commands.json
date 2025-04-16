@@ -1,0 +1,8 @@
+[
+{
+  "directory": "C:/Users/12552/PycharmProjects/Data/.vscode/PybindTest/build",
+  "command": "C:\\mingw64\\bin\\g++.exe -Dmymodule_EXPORTS @CMakeFiles/mymodule.dir/includes_CXX.rsp -g -std=gnu++17 -fvisibility=hidden -o CMakeFiles\\mymodule.dir\\main.cpp.obj -c C:\\Users\\12552\\PycharmProjects\\Data\\.vscode\\PybindTest\\main.cpp",
+  "file": "C:/Users/12552/PycharmProjects/Data/.vscode/PybindTest/main.cpp",
+  "output": "CMakeFiles/mymodule.dir/main.cpp.obj"
+}
+]

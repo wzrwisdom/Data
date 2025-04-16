@@ -1,0 +1,1 @@
+ "D:/Program Files/vcpkg/packages/talib_x64-windows/lib/ta_libc.lib" -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
